@@ -67,6 +67,34 @@ FIGURE -03
 
 
 PROGRAM 
+
+```
+int ledpin=7;
+int pushpin=2;
+int val=0;
+void setup()
+{
+  pinMode(ledpin, OUTPUT);
+  pinMode(pushpin,INPUT);
+}
+
+void loop()
+{
+  val =digitalRead(pushpin);
+  if(val==0)
+  {
+    digitalWrite(ledpin,HIGH);
+  }
+  else
+  {
+    digitalWrite(ledpin,LOW);
+  }
+    
+}
+```
+ 
+ 
+ 
  
  
  
@@ -77,5 +105,12 @@ PROGRAM
 
 Output of the simulation :
 
-[My image](username.github.com/repository/img/image.jpg)
+BEFORE SIMULATION :
+![](./e1.jpg)
 
+AFTER SIMULATION :
+![](./e2.jpg)
+
+RESULT :
+
+Thus the simulation output is completed in tinker cad successfully.
